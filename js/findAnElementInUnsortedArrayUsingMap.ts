@@ -1,6 +1,6 @@
 // Given a unsorted array [3,6,13,10,1,2,15,11] , find a specific element "13"
 
-function creatElementMap(arr){
+function creatElementMap(arr:number[]){
     let m = new Map(); 
     arr.forEach((a, index) =>{
       !m.has(a)? m.set(a, index) : null; 
@@ -8,7 +8,7 @@ function creatElementMap(arr){
     return m;
  }
  
-function search(arr, target){
+function search(arr:number[], target:number){
     let map = creatElementMap(arr);
     return map.get(target);
 }

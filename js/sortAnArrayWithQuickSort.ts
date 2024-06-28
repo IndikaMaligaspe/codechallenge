@@ -1,4 +1,4 @@
-function quickSort(arr){
+function quickSort(arr:number[]){
     if(arr.length <=1) return arr;
     let pivot = arr[Math.floor(arr.length /2)];
     let left = arr.filter(x => x < pivot);

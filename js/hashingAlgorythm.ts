@@ -1,6 +1,6 @@
 // Find two numbers in an integer array [3,6,13,10,1,2,15,11] that adds up to 9
 
-function twoSum(arr, target) {
+function twoSum(arr:number[], target:number) {
     if(arr.length <=1 ) return arr;
     let m = new Map();
     for(let i = 0; i < arr.length; i++) {

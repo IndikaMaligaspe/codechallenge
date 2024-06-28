@@ -1,6 +1,6 @@
 // Given a sorted array [1, 2, 3, 4, 5, 6] , find a specific element "4"
 
-function binarySearch(arr, target){
+function binarySearch(arr:number[], target:number){
     if (arr.length <= 1) return arr;
     let left = 0;
     let right = arr.length -1;

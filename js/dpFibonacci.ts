@@ -1,4 +1,4 @@
-function fibonacci(n){
+function fibonacci(n:number){
     if (n <=1) return n;
     let arr = [n];
     arr[0] = 0;

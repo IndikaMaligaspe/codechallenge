@@ -1,6 +1,6 @@
 // Given items and values of n items, 
 // put these items in a knapsack of capacity W to get the maximum total value in the knapsack.
-function knapsack(items, values, W){
+function knapsack(items:number[], values:number[], W:number){
  let n = items.length;
  let twoDArr = Array.from({length: n + 1}, () => Array(W + 1).fill(0));
  for(let i = 1; i <= n; i++){

@@ -1,6 +1,6 @@
 // Given two strings, find the length of their longest common subsequence.
 
-function longetCommonSubsequence(text1, text2){
+function longetCommonSubsequence(text1:string, text2:string){
     let m = text1.length;
     let n = text2.length;
     let tdArr = Array.from({length: m + 1 }, () => Array( n + 1 ).fill(0));
@@ -15,7 +15,6 @@ function longetCommonSubsequence(text1, text2){
             }
         }
     }
-    console.log(txt);
     return(tdArr[m][n]);
 }
 
